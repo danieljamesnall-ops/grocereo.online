@@ -1,0 +1,45 @@
+
+/* style.css - Grocereo Company Website */
+*{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+body{line-height:1.6;background:#fdfdfd;color:#333;}
+header{background:#0b6e4f;color:#fff;padding:20px 0;position:sticky;top:0;z-index:1000;}
+.container{width:90%;max-width:1200px;margin:0 auto;}
+nav{display:flex;align-items:center;justify-content:space-between;}
+.logo{font-size:1.5rem;font-weight:bold;}
+nav ul{list-style:none;display:flex;gap:30px;}
+nav a{color:#fff;text-decoration:none;font-weight:500;transition:opacity 0.3s;}
+nav a:hover{opacity:0.8;}
+.hero{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:120px 20px;background:url('https://images.unsplash.com/photo-1606851725224-fb4e9b89f3e5?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;color:#fff;}
+.hero h1{font-size:3rem;margin-bottom:20px;text-shadow:0 4px 6px rgba(0,0,0,0.3);}
+.hero p{font-size:1.25rem;max-width:650px;}
+.btn{display:inline-block;padding:12px 28px;background:#ff8c00;color:#fff;border-radius:4px;text-decoration:none;font-weight:bold;margin-top:30px;transition:background 0.3s;}
+.btn:hover{background:#e67600;}
+.section{padding:80px 20px;}
+.section h2{text-align:center;font-size:2.4rem;margin-bottom:40px;color:#0b6e4f;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+.card{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.08);border-radius:8px;padding:30px;text-align:center;transition:transform 0.3s;}
+.card:hover{transform:translateY(-6px);}
+.card i{font-size:2.5rem;color:#ff8c00;margin-bottom:15px;}
+footer{background:#222;color:#aaa;text-align:center;padding:40px 20px;}
+footer .social{display:flex;justify-content:center;gap:20px;margin-bottom:20px;}
+footer a{color:#aaa;text-decoration:none;font-size:1.2rem;transition:color 0.3s;}
+footer a:hover{color:#fff;}
+@media (max-width:768px){
+   nav ul{flex-direction:column;gap:15px;background:#0b6e4f;position:absolute;top:68px;right:0;padding:20px;display:none;}
+   nav ul.show{display:flex;}
+   .menu-toggle{display:block;cursor:pointer;color:#fff;font-size:1.6rem;}
+}
+
+/* Team Section */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;}
+.team-card{text-align:center;background:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.06);padding:20px;transition:transform 0.3s;}
+.team-card:hover{transform:translateY(-4px);}
+.team-card img{width:100%;height:260px;object-fit:cover;border-radius:6px;margin-bottom:15px;}
+.team-card h4{margin-bottom:8px;color:#0b6e4f;}
+.team-card p{font-size:0.9rem;color:#555;}
+
+.team-row{display:flex;justify-content:center;flex-wrap:wrap;gap:40px;margin-bottom:60px;}
+.member{text-align:center;max-width:160px;}
+.member img{width:160px;height:160px;object-fit:cover;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.member h4{margin-top:15px;font-size:1.05rem;color:#0b6e4f;}
+.member span{font-size:0.9rem;color:#555;}
